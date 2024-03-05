@@ -18,6 +18,10 @@ public class Main {
         catch (Exception e){
 
         }
+        for(String s: names){
+            Trie.insert(s);
+        }
+        System.out.println(names);
     }
 
 
