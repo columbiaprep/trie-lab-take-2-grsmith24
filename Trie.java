@@ -10,7 +10,9 @@ public class Trie {
 
 
 
-
+    public static void insert(String key){
+        insert(key,root);
+    }
     // If not present, inserts key into trie
     // If the key is prefix of trie node,
     // just marks leaf node
@@ -18,7 +20,7 @@ public class Trie {
         //go recursive
         //go character by character
         //base case: key.length()==0
-        if(key.length() <2>){
+        if(key.length() <2){
             return;
         }
         else{
